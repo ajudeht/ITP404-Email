@@ -1,0 +1,5 @@
+{{#each data.emails as |email|}}
+  {{email-item title=email.title isRead=email.isRead id=email.id markRead=(action "markRead")}}
+{{/each}}
+
+{{yield}}

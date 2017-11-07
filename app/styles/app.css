@@ -1,0 +1,64 @@
+body{
+
+font-size: 16px; 
+font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+.email{
+  padding: .8em;
+  margin: .2em;
+  
+    box-shadow: 0 1px 2px 0 rgba(51, 57, 72, 0.075);
+  border-radius: 3px;
+  transition: background-color .5s  cubic-bezier(.78,.41,.23,1), color .5s  cubic-bezier(.78,.41,.23,1), padding .75s  cubic-bezier(.78,.41,.23,1);
+  
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+   -khtml-user-select: none; 
+     -moz-user-select: none; 
+      -ms-user-select: none; 
+          user-select: none;
+          
+}
+
+.mi{
+
+  font-family: "Material Icons";
+  position: relative;
+  top: 2px;
+  
+}
+
+.read-indicator{
+
+  font-weight: bold;
+  color: #3fd560;
+  padding: .2em;
+  border-radius: 4em;
+  width: 1em;
+  height: 1em;
+  margin-right: .4em;
+  font-size: .9em;
+  
+}
+
+.email.read{
+  
+background-color: #fdffff;
+color: #6e7e8c;
+
+}
+
+.email.unread .read-indicator{
+
+display: none;
+
+}
+
+.email.unread{
+  cursor: pointer;
+background-color: white;
+font-weight: bold;
+padding-top: 1.25em;
+padding-bottom: 1.25em;
+}
